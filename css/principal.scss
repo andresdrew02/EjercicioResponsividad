@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/*# sourceMappingURL=principal.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f5fe url("../imagenes/fondo.gif") 0 0 repeat-x;
+  font: 70%/160% "verdana", sans-serif;
+  color: #192666;
+}
+a {
+  color: #192666;
+  &:hover {
+    color: #4f6ad7;
+  }
+}
+p {
+  margin: 1em 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+}
+h1 {
+  margin: 1em 0;
+  padding: 0;
+  font-size: 260%;
+  font-family: "georgia", serif;
+  font-weight: normal;
+}
+h2 {
+  margin: 1em 0;
+  padding: 0;
+  font-size: 180%;
+  font-family: "georgia", serif;
+}
+h3 {
+  margin: 1em 0;
+  padding: 0;
+  font-size: 120%;
+}
+h4 {
+  margin: 1em 0;
+  padding: 0;
+}
+h5 {
+  margin: 1em 0;
+  padding: 0;
+}
+ul {
+  margin: 1em 0 1em 2em;
+  padding: 0;
+}
+ol {
+  margin: 1em 0 1em 2em;
+  padding: 0;
+}
+#contenedor {
+  width: 65%;
+  margin: auto;
+  margin-top: 3rem;
+}
+#cabecera {
+  width: 100%;
+  max-width: 48rem;
+  min-width: 42rem;
+  position: relative;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background: #233c9b url("../imagenes/cabecera.jpg") no-repeat;
+  color: #fff;
+  #logo {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    margin: 0;
+    a {
+      color: #fff;
+      display: block;
+      line-height: 35px;
+      &:hover {
+        color: #b5c4e3;
+        text-decoration: underline;
+      }
+    }
+  }
+  #buscador {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    legend {
+      display: none;
+    }
+    fieldset {
+      border: none;
+    }
+    input[type="text"] {
+      width: 10rem;
+    }
+  }
+}
+#contenido {
+  width: 99.5%;
+  min-width: 41.7rem;
+  max-width: 47.5rem;
+  margin: 0 5px;
+  background: #fff;
+  #principal {
+    float: left;
+    width: 530px;
+    margin-top: 15px;
+    padding: 0 0 0 20px;
+    background: #fff;
+  }
+  #secundario_tablet {
+    display: none;
+  }
+  #secundario {
+    float: inline-start;
+    width: 9rem;
+    margin-left: 2rem;
+    padding: 0;
+    background: #cedbf9 url("../imagenes/fondo_columna.gif") no-repeat;
+    .fa-eject {
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+    h3 {
+      padding: 10px 0 10px 10px;
+      margin-top: 20px;
+      background: #a0b9f3;
+      color: #192666;
+    }
+    #sobremi {
+      img {
+        float: left;
+        margin: 4px 5px 0 0;
+      }
+    }
+    div {
+      padding: 0 10px;
+    }
+    ul {
+      margin: 15px 0;
+      padding: 0;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid #e0e8fa;
+      a {
+        display: block;
+        padding: 3px 0 3px 22px;
+        background: url("../imagenes/icono_elemento.gif") 8px no-repeat;
+        text-decoration: none;
+        &:hover {
+          background-color: #e0e8fa;
+          color: #192666;
+        }
+      }
+      .seleccionado {
+        a {
+          background: #e0e8fa url("../imagenes/icono_elemento_seleccionado.gif")
+            8px no-repeat;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .articulo {
+    clear: both;
+    margin: 0;
+    width: 40vw;
+    min-width: 25rem;
+    padding: 20px;
+    background: url("../imagenes/fondo_articulo.jpg") no-repeat;
+    img {
+      width: 35vw;
+      min-width: 25rem;
+      max-width: 30rem;
+    }
+    h2 {
+      margin: 0 -20px;
+      width: 90%;
+      min-width: 20rem;
+      max-width: 30rem;
+      padding: 10px;
+      background: #dee5fd;
+      color: #192666;
+    }
+  }
+  .info {
+    margin: 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dee5fd;
+    color: #6685cc;
+    a {
+      color: #6685cc;
+      &:hover {
+        color: #ff9000;
+      }
+    }
+    span {
+      .fecha {
+        padding-left: 15px;
+        background: url("../imagenes/icono_fecha.gif") 0 50% no-repeat;
+      }
+      .categoria {
+        padding-left: 15px;
+        background: url("../imagenes/icono_categoria.gif") 0 50% no-repeat;
+        margin-left: 8px;
+      }
+      .autor {
+        padding-left: 15px;
+        background: url("../imagenes/icono_autor.gif") 0 50% no-repeat;
+        margin-left: 8px;
+      }
+      .comentarios {
+        padding-left: 15px;
+        background: url("../imagenes/icono_comentarios.gif") 0 50% no-repeat;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+#pie {
+  clear: both;
+  height: 60px;
+  margin-bottom: 50px;
+  background: url("../imagenes/fondo_pie.jpg") no-repeat;
+  color: #6685cc;
+  position: relative;
+  p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+  }
+}
+#menu {
+  background: #192666;
+  width: 99.4%;
+  max-width: 47.5rem;
+  min-width: 41.7rem;
+  margin: 0 5px;
+  padding: 10px 0 0 0;
+  ul {
+    margin: 0 10px;
+    padding: 0;
+    li {
+      margin: 0 5px 10px;
+      padding: 0;
+      display: inline-block;
+      a {
+        display: block;
+        position: relative;
+        padding: 5px 15px;
+        border: 0;
+        background: #253575;
+        color: #b5c4e3;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          background: #31479b;
+        }
+      }
+      .seleccionado {
+        a {
+          background: #fff;
+          color: #ff9000;
+        }
+      }
+    }
+  }
+}
+
+.hidden_desktop{
+	display:none;
+}
+
+@media screen and (max-width: 1125px) {
+  #secundario_tablet {
+    display: flex !important;
+    justify-content: center;
+    button {
+      margin-top: 0.5rem;
+      background-color: #cedbf9;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 0.6rem;
+      border-radius: 25rem;
+      i {
+        color: rgb(26, 26, 26);
+        font-size: 1.5rem;
+        border-radius: 25rem;
+      }
+      &:hover {
+        background-color: #b7ccff;
+        i {
+          color: black;
+        }
+      }
+    }
+  }
+
+  #secundario {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  body {
+    width: 100%;
+  }
+  #contenedor {
+    width: 99.9%;
+    margin: 0;
+  }
+  #cabecera {
+    margin-left: 0;
+    background: #233c9b;
+    max-width: 100%;
+  }
+  #contenido {
+    max-width: 100%;
+    .articulo {
+      background:none;
+	  background-color:#c0ccfc;
+      width: 80vw;
+      max-width: 90%;
+	  h2{
+		background: none;
+		font-size:1.6rem;
+	  }
+    }
+  }
+  #menu {
+    max-width: 99.9%;
+	width:100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:661px){
+	.hidden_mobile{
+		display:none;
+		width:0;
+	}
+	.hidden_desktop{
+		display:flex;
+		justify-content: space-between;
+		i{
+			font-size:1rem;
+		}
+	}
+}
